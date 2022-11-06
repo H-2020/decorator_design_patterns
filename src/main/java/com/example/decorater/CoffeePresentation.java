@@ -5,12 +5,12 @@ public class CoffeePresentation {
     public static void main(String[] args) {
         Coffee americano = new Americano();
 
-//        Coffee americanoWithMocha = new Mocha(americano);
-//        Coffee americanoWith2Mocha = new Mocha(americanoWithMocha);
-//        Coffee americanoWith2MochaAndMilk = new Milk(americanoWith2Mocha);
-//        Coffee americanoWith2MochaAndMilkAndChocolate = new Chocolate(americanoWith2MochaAndMilk);
+        Coffee americanoWithMocha = new Mocha(americano);
+        Coffee americanoWith2Mocha = new Mocha(americanoWithMocha);
+        Coffee americanoWith2MochaAndMilk = new Milk(americanoWith2Mocha);
+        Coffee americanoWith2MochaAndMilkAndChocolate = new Chocolate(americanoWith2MochaAndMilk);
 
-        Coffee americanoWith2MochaAndMilkAndChocolate = new Chocolate(new Milk(new Mocha(americano)));
+        //Coffee americanoWith2MochaAndMilkAndChocolate = new Chocolate(new Milk(new Mocha(americano)));
         System.out.println("Decription:" + americanoWith2MochaAndMilkAndChocolate.getDecription());
         System.out.println("Cost:" + americanoWith2MochaAndMilkAndChocolate.getCost());
     }
